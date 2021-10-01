@@ -1,0 +1,607 @@
+/*body{
+  background-color: pink;
+  
+}*/
+
+/*.navbar {
+  width: 100%;
+  background-color: #fe9c6f;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: yellow;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #00C2DE;
+}
+
+.active {
+  background-color: #04AA6D;
+}*/
+/*@key frames is from animated css website https://wweb.dev/resources/animated-css-background-generator/ */
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #c94f58;
+    overflow: hidden;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 19s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 59%;
+    width: 77px;
+    height: 77px;
+    bottom: -77px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 49%;
+    width: 60px;
+    height: 60px;
+    bottom: -60px;
+    animation-delay: 5s;
+}
+.background li:nth-child(2) {
+    left: 46%;
+    width: 191px;
+    height: 191px;
+    bottom: -191px;
+    animation-delay: 5s;
+}
+.background li:nth-child(3) {
+    left: 55%;
+    width: 133px;
+    height: 133px;
+    bottom: -133px;
+    animation-delay: 11s;
+}
+.background li:nth-child(4) {
+    left: 11%;
+    width: 105px;
+    height: 105px;
+    bottom: -105px;
+    animation-delay: 9s;
+}
+.background li:nth-child(5) {
+    left: 28%;
+    width: 88px;
+    height: 88px;
+    bottom: -88px;
+    animation-delay: 7s;
+}
+.background li:nth-child(6) {
+    left: 18%;
+    width: 164px;
+    height: 164px;
+    bottom: -164px;
+    animation-delay: 12s;
+}
+.background li:nth-child(7) {
+    left: 11%;
+    width: 131px;
+    height: 131px;
+    bottom: -131px;
+    animation-delay: 19s;
+}
+.background li:nth-child(8) {
+    left: 0%;
+    width: 103px;
+    height: 103px;
+    bottom: -103px;
+    animation-delay: 2s;
+}
+.background li:nth-child(9) {
+    left: 71%;
+    width: 69px;
+    height: 69px;
+    bottom: -69px;
+    animation-delay: 30s;
+}
+
+/*my originalcode */
+li a {
+  float: left;
+  padding: 12px;
+  color: yellow;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Reenie Beanie', cursive;
+}
+
+li a:hover {
+  background-color: #00C2DE;
+}
+
+active {
+  background-color: #04AA6D;
+}
+.button {
+  position: relative;
+  top:600px;
+  left: 600px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 30px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-family: 'Tourney', cursive;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.slide{
+  position: relative;
+  padding-top: 10px;
+  padding-left: 900px;
+  padding-right: 100px;
+}
+.back-slide{
+  position: absolute;
+  top: 460px;
+  left: 790px;
+  width: 170px;
+  height: 15px;
+  background-color: #a45d29;
+  border-radius: 15px 50px 30px;
+  transform: rotate(-45deg);
+}
+.middle-slide{
+  position: absolute;
+  top: 470px;
+  left: 800px;
+  width: 170px;
+  height: 25px;
+  background-color: #b7682e;
+  border-radius: 15px 50px 30px 30px;
+  transform: rotate(-48deg);
+}
+.front-slide{
+  position: absolute;
+  top: 480px;
+  left: 820px;
+  width: 170px;
+  height: 15px;
+  background-color: #a45d29;
+  border-radius: 15px 50px 30px;
+  transform: rotate(-48deg);
+}
+
+.back-left-pole{
+  position: absolute;
+  top: 320px;
+  left: 920px;
+  width: 10px;
+  height: 180px;
+  background-color: blue;
+  border-radius:  30px;
+ 
+}
+
+.back-right-pole{
+  position: absolute;
+  top: 320px;
+  left: 980px;
+  width: 10px;
+  height: 180px;
+  background-color: blue;
+  border-radius: 30px;
+}
+
+.back-slidebars{
+  position: absolute;
+  top: 340px;
+  left: 930px;
+  width: 60px;
+  height:5px;
+  background-color: green;
+  transform: rotate(-5deg);
+}
+
+.slide-plane{
+  position: absolute;
+  top: 410px;
+  left: 935px;
+  width: 85px;
+  height:40px;
+  background-color: black;
+  
+}
+.slide-plane2{
+  position: absolute;
+  top: 440px;
+  left: 935px;
+  width: 85px;
+  height:10px;
+  background-color: #361f0d;
+  
+}
+
+
+.front-slidebars{ 
+ position: absolute;
+  top: 350px;
+  left: 970px;
+  width: 60px;
+  height:5px;
+  background-color: green;
+  transform: rotate(-5deg);
+}
+
+.front-left-pole{
+  position: absolute;
+  top: 320px;
+  left: 965px;
+  width: 10px;
+  height: 190px;
+  background-color: blue;
+  border-radius: 30px;
+}
+.front-right-pole{
+  position: absolute;
+  top: 320px;
+  left: 1020px;
+  width: 10px;
+  height: 185px;
+  background-color: blue;
+  border-radius: 30px;
+}
+
+.stairs{
+  position: absolute;
+  top: 445px;
+  left: 1020px;
+  width: 60px;
+  height:15px;
+  background-color: black;
+  transform: rotate(35deg);
+}
+
+
+.swings{
+  position: relative;
+  padding-top: 500px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+
+
+.swing-left-back-bar{
+  position: absolute;
+  top: 520px;
+  left: 140px;
+  width: 10px;
+  height: 190px;
+  background-color: blue;
+  border-radius:  30px;
+ 
+}
+
+.swing-right-back-bar{
+  position: absolute;
+  top: 520px;
+  left: 350px;
+  width: 10px;
+  height: 190px;
+  background-color: blue;
+  border-radius:  30px;
+ 
+}
+
+.swing-left-front-bar{
+  position: absolute;
+  top: 520px;
+  left: 120px;
+  width: 10px;
+  height: 200px;
+  background-color: blue;
+  border-radius:  30px;
+  transform: rotate(10deg);
+}
+.swing-right-front-bar{
+ position: absolute;
+  top: 520px;
+  left: 370px;
+  width: 10px;
+  height: 200px;
+  background-color: blue;
+  border-radius:  30px;
+  transform: rotate(-10deg);
+}
+.swing-left-string{
+  position: absolute;
+  top: 520px;
+  left: 185px;
+  width: 5px;
+  height: 140px;
+  background-color: orange;
+  border-radius:  30px;
+}
+.swing-right-string{
+   position: absolute;
+  top: 520px;
+  left: 230px;
+  width: 5px;
+  height: 140px;
+  background-color: orange;
+  border-radius:  30px;
+}
+.swing-left-string2{
+  position: absolute;
+  top: 520px;
+  left: 265px;
+  width: 5px;
+  height: 140px;
+  background-color: orange;
+  border-radius:  30px;
+}
+.swing-right-string2{
+  position: absolute;
+  top: 520px;
+  left: 310px;
+  width: 5px;
+  height: 140px;
+  background-color: orange;
+  border-radius:  30px;
+}
+
+.swing-top-bar{
+  position: absolute;
+  top: 515px;
+  left: 120px;
+  width: 260px;
+  height:15px;
+  background-color: blue;
+  border-radius:  30px;
+  
+}
+.swing-seat-top{
+  position: absolute;
+  top: 655px;
+  left: 180px;
+  width: 60px;
+  height:10px;
+  background-color: pink;
+  border-radius:  80px;
+}
+.swing-seat-bottom{
+  position: absolute;
+  top: 665px;
+  left: 180px;
+  width: 60px;
+  height:10px;
+  background-color: red;
+  border-radius:  80px;
+}
+.swing-seat-top2{
+  position: absolute;
+  top: 655px;
+  left: 260px;
+  width: 60px;
+  height:10px;
+  background-color: pink;
+  border-radius:  80px;
+}
+.swing-seat-bottom2{
+  position: absolute;
+  top: 665px;
+  left: 260px;
+  width: 60px;
+  height:10px;
+  background-color: red;
+  border-radius:  80px;
+}
+
+.monkeybars{
+  position:absolute;
+  top: 125px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.side-bar1{
+  position: absolute;
+  top: 50px;
+  left: 140px;
+  width: 5px;
+  height:70px;
+  background-color: green;
+  transform: rotate(-70deg);
+}
+.side-bar2{
+  position: absolute;
+  top: 40px;
+  left: 185px;
+  width: 5px;
+  height:70px;
+  background-color: green;
+  transform: rotate(-70deg);
+}
+.side-bar3{
+  position: absolute;
+  top: 30px;
+  left: 220px;
+  width: 5px;
+  height:75px;
+  background-color: green;
+  transform: rotate(-70deg);
+}
+.side-bar4{
+   position: absolute;
+  top: 25px;
+  left: 265px;
+  width: 5px;
+  height:70px;
+  background-color: green;
+  transform: rotate(-68deg);
+}
+.side-bar5{
+  position: absolute;
+  top: 15px;
+  left: 310px;
+  width: 5px;
+  height:70px;
+  background-color: green;
+  transform: rotate(-70deg);
+}
+.side-bar6{
+  position: absolute;
+  top: 5px;
+  left: 355px;
+  width: 5px;
+  height:70px;
+  background-color: green;
+  transform: rotate(-68deg);
+}
+.back-monkeybar{
+  position: absolute;
+  top: 45px;
+  left: 110px;
+  width: 220px;
+  height:5px;
+  background-color: green;
+  transform: rotate(-12deg);
+}
+
+.front-monkeybar{
+ position: absolute;
+  top: 75px;
+  left: 170px;
+  width: 220px;
+  height:5px;
+  background-color: green;
+  transform: rotate(-12deg);
+}
+.backleg-left{
+  position: absolute;
+  top: 70px;
+  left: 110px;
+  width: 10px;
+  height: 190px;
+  background-color: blue;
+  border-radius: 30px;
+}
+.backleg-right{
+  position: absolute;
+  top: 90px;
+  left: 175px;
+  width: 10px;
+  height: 190px;
+  background-color: blue;
+  border-radius: 30px;
+}
+.frontleg-left{
+  position: absolute;
+  top: 30px;
+  left: 310px;
+  width: 10px;
+  height: 190px;
+  background-color: blue;
+  border-radius: 30px;
+}
+.frontleg-right{
+  position: absolute;
+  top: 50px;
+  left: 375px;
+  width: 10px;
+  height: 190px;
+  background-color: blue;
+  border-radius: 30px;
+}
+.left-bar1{
+  position: absolute;
+  top: 150px;
+  left: 140px;
+  width: 5px;
+  height:70px;
+  background-color: green;
+  transform: rotate(-70deg);
+}
+.left-bar2{
+  position: absolute;
+  top: 170px;
+  left: 140px;
+  width: 5px;
+  height:70px;
+  background-color: green;
+  transform: rotate(-70deg);
+}
+.left-bar3{
+  position: absolute;
+  top: 200px;
+  left: 140px;
+  width: 5px;
+  height:70px;
+  background-color: green;
+  transform: rotate(-70deg);
+}
+.right-bar1{
+  position: absolute;
+  top: 105px;
+  left: 345px;
+  width: 5px;
+  height:70px;
+  background-color: green;
+  transform: rotate(-70deg);
+}
+.right-bar2{
+  position: absolute;
+  top: 130px;
+  left: 345px;
+  width: 5px;
+  height:70px;
+  background-color: green;
+  transform: rotate(-70deg);
+
+}
+.right-bar3{
+  position: absolute;
+  top: 155px;
+  left: 345px;
+  width: 5px;
+  height:70px;
+  background-color: green;
+  transform: rotate(-70deg);
+}
+
+
+
+
